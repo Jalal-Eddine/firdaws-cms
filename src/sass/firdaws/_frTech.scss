@@ -1,0 +1,23 @@
+.tech{
+    // height: 50vh;
+    animation: move-top-bottom 4s infinite;
+    img{
+        position: absolute;
+        opacity: 0.05;
+        max-width: 100%;
+        height: 100vh;
+        border-radius: .2857rem;
+        animation: move-top-bottom 4s infinite;
+    }
+    &__container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding:0 10rem 0 10rem;
+    }
+    &__icons{
+        font-size: 12rem;
+        margin-left: 5rem;
+    }
+}

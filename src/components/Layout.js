@@ -1,8 +1,11 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
-import './all.sass'
+// import Footer from '../components/Footer'
+// import Navbar from '../components/Navbar'
+// import FrNavBar from '../components/firdaws/FrNavBar'
+import FrFooter from '../components/firdaws/FrFooter'
+// import './all.sass'
+import '../sass/firdaws.scss'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
@@ -48,9 +51,10 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      <Navbar />
+      {/* <Navbar /> */}
+      {/* <FrNavBar/> */}
       <div>{children}</div>
-      <Footer />
+      <FrFooter />
     </div>
   )
 }

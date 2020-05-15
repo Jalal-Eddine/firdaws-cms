@@ -1,0 +1,152 @@
+@import "./../utils/variables";
+
+// Navigation2
+//*************
+.main_h {
+    position: fixed;
+    top: 0px;
+    max-height: 7rem;
+    z-index: 999;
+    width: 100%;
+    padding-top: 1.7rem;
+    background: none;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    padding-bottom: .6rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  @media only screen and (max-width: 766px) {
+    .main_h {
+      padding-top: 25px;
+    }
+  }
+  
+  .open-nav {
+    max-height: 400px !important;
+    background-color: $color-primary;
+  }
+  .open-nav .mobile-toggle {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+  }
+  /*class that replace the main_h after scrolling downs*/
+  .sticky {
+    background-color: $color-primary;
+    opacity: 1;
+    top: 0px;
+    border-bottom: 1px solid gainsboro;
+  }
+  
+  .logo {
+    width: 5rem;
+    font-size: 2.5rem;
+    color: $color-white;
+    text-transform: uppercase;
+    float: left;
+    display: block;
+    margin-top: 0;
+    line-height: 1;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  @media only screen and (max-width: 766px) {
+    .logo {
+      float: none;
+    }
+  } 
+  .main_h nav {
+    float: right;
+    width: 90%;
+    &  ul {
+        list-style: none;
+        overflow: hidden;
+        text-align: right;
+        float: right;
+      }
+  }
+  @media only screen and (max-width: 766px) {
+    .main_h nav {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 766px) {
+    .main_h nav ul {
+      padding-top: 10px;
+      margin-bottom: 22px;
+      float: left;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  .main_h nav ul li {
+    display: inline-block;
+    margin-left: 35px;
+    line-height: 1.5;
+    &:last-child{
+      margin-right: 35px;//for the last child to apear fully
+    }
+  }
+  @media only screen and (max-width: 766px) {
+    .main_h nav ul li {
+      width: 100%;
+      padding: 7px 0;
+      margin: 0;
+    }
+  }
+  .main_h nav ul a {
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-decoration: none;
+      &:link,//to add the effect of zooming out
+      &:visited {
+          color: $color-white;
+          text-decoration: none;
+          text-transform: uppercase;
+          display: inline-block;
+          transition: all .2s;
+      }
+      &:hover,
+      &:active {
+          color: $color-grey-light-1;
+          box-shadow: 0 1rem 2rem rgba($color-black, .4);
+          transform: rotate(0deg) scale(1.2);
+          cursor: pointer;
+      }
+  }
+  
+  .mobile-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 22px;
+    top: 0;
+    width: 30px;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+  }
+  @media only screen and (max-width: 766px) {
+    .mobile-toggle {
+      display: block;
+    }
+  }
+  .mobile-toggle span {
+    width: 30px;
+    height: 4px;
+    margin-bottom: 6px;
+    border-radius: 1000px;
+    background: $color-white;
+    display: block;
+  }
+  
+  .main_h .row {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 2%;
+  }

@@ -1,0 +1,68 @@
+.resume .func .skills-soft {
+    // clear: both;
+    // border: solid 2px white;
+    background: $darker-color;
+    padding: 1.5rem;
+    margin: 1.5rem 0 0;
+    stroke: $text-hover;
+    stroke-width: .4rem;
+
+    .ul {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      @media only screen and (max-width: 37.5em) {
+        flex-direction: column;
+      }
+      figure {
+        position: relative;
+        padding-bottom: 1rem;
+        stroke-width: .1rem;
+        stroke: $text-background;
+        &:hover svg .cbar {
+          stroke: $text-hover;
+          stroke-width: .4rem;
+        }
+        svg {
+          height: 16rem;
+          width: 16rem;
+          fill: transparent;
+          transform: rotate(-90deg);
+          @media only screen and (max-width: 75em) {
+            height: 19rem;
+            width: 19rem;
+        }
+          circle {
+            stroke-width: .1rem;
+            stroke: $text-background;
+          }
+          .cbar {
+            stroke-width: .3rem;
+            stroke: $icons;
+            stroke-linecap: round;
+          }
+        }
+        figcaption{
+          position: absolute;
+          display: block;
+          width: 100%;
+          top: 52%;
+          transition-duration: 0.3s;
+          top: 40%;
+          span{
+            position: absolute;
+            display: block;
+            width: 100%;
+            top: 110%;
+            transition-duration: 0.3s;
+          }
+        }
+        &:hover span,
+        &:hover small {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+}
+  

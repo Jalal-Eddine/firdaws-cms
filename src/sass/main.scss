@@ -1,0 +1,35 @@
+@import "utils/functions";
+@import "utils/mixins";
+@import "utils/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+
+@import "components/button";
+@import "components/card";
+@import "components/mini-projects";
+@import "components/popup";
+@import "components/spinner";
+@import "components/square";
+
+@import "layout/header";
+// @import "layout/footer";
+@import "layout/grid";
+
+@import "pages/home";
+
+//Resume:
+// @import "resume/sidebar";
+@import "resume/main-section";
+@import "resume/base";
+@import "resume/experience";
+@import "resume/progSkills";
+@import "resume/softSkills";
+@import "resume/interests";
+
+
+
+

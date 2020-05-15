@@ -1,0 +1,36 @@
+.blogCard{
+    background-image:linear-gradient(to right, rgba($color-logo-1,0.5), rgba($color-blue-2,0.5)) ;
+    margin: 1rem;
+    border-radius: 12px;
+    width: 32rem;
+    height: 32rem;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+    &:hover{
+        transform: scale(1.05);
+    }
+    & img{
+        height: 65%;
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+    }
+    &__text{
+        margin-left: 1rem;
+        & h2{
+            font-size: 2rem;
+        }
+        & p{
+            font-size: 1.4rem;
+        }
+    }
+}
+.cardList{
+    // background-color: rgba($color-blue-2,0.2);
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: center;
+    min-height: 100vh;
+}

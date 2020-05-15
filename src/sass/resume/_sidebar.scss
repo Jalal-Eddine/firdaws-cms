@@ -1,0 +1,139 @@
+.resume .base {
+    width: 30%;
+    padding: 3rem 1.5rem;
+    background: $darker-color;
+    color: $text-background;
+      //cridit
+  .credit{
+    // margin-left:1rem;
+    a{
+      color:$icons;
+    }
+  }
+    @media only screen and (max-width: 56.25em) {
+    text-align: center;
+      width: 100%;
+  }
+  }
+  .resume .base .profile {
+    background: $icons;
+    padding: 3rem 1.5rem 4rem 1.5rem;
+    margin: -3rem -1.5rem 4.5rem -1.5rem;
+    position: relative;
+    z-index: 2;
+  }
+  .resume .base .profile::after {
+    content: "";
+    position: absolute;
+    background: $dark-color;
+    width: 100%;
+    height: 3rem;
+    bottom: -1.5rem;
+    left: 0;
+    transform: skewY(-5deg);
+    z-index: -1;
+  }
+  .resume .base .profile .photo img {
+    width: 100%;
+    border-radius: 50%;
+    @media only screen and (max-width: 56.25em) {
+        width: 30%;
+    }
+  }
+  .resume .base .profile .photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .resume .base .profile .fa-rocket {
+    font-size: 10rem;
+    text-align: center;
+    margin: auto;
+    color: $darker-color;
+  }
+  .resume .base .profile .info {
+    text-align: center;
+    color: $text-background;
+  }
+  .resume .base .profile .info .name {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 3rem;
+    text-transform: lowercase;
+    color: $darkest-color;
+  }
+  .resume .base .profile .info .job {
+    // margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+    text-transform: lowercase;
+    color: $darker-color;
+  }
+  .resume .base .contact div {
+    line-height: 2.4rem;
+  }
+  .resume .base .contact div a:hover {
+    color: $text-hover;
+  }
+  .resume .base .contact div a:hover span::after {
+    width: 100%;
+  }
+  .resume .base .contact div:hover i {
+    color: $text-hover;
+  }
+  .resume .base .contact div i {
+    color: $icons;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-right: 1.5rem;
+    transition-duration: 0.3s;
+  }
+  .resume .base .contact div span {
+    position: relative;
+  }
+  .resume .base .contact div span::after {
+    content: "";
+    position: absolute;
+    background: $text-hover;
+    height: .1rem;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    transition-duration: 0.3s;
+  }
+  .resume .base .follow .box {
+    text-align: center;
+    vertical-align: middle;
+  }
+  .resume .base .follow .box a {
+    display: inline-block;
+    vertical-align: text-bottom;
+  }
+  .resume .base .follow .box a:hover i {
+    background: $text-hover;
+    border-radius: .5rem;
+    transform: rotate(45deg) scale(0.8);
+  }
+  .resume .base .follow .box a:hover i::before {
+    transform: rotate(-45deg) scale(1.5);
+  }
+  .resume .base .follow .box i {
+    display: inline-block;
+    font-size: 3rem;
+    background: $icons;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    line-height: 6rem;
+    color: $darker-color;
+    margin: 0 1rem 1rem 1rem;
+    transition-duration: 0.3s;
+  }
+  .resume .base .follow .box i::before {
+    transition-duration: 0.3s;
+  }
+  .resume .base .follow .box i.fa::before {
+    display: block;
+  }

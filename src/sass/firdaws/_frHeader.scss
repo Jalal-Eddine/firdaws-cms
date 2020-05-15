@@ -1,0 +1,41 @@
+.frHeader {
+    min-height: 100vh;
+    // overflow-x: hidden;
+    .container{
+        animation: move-top-bottom 4s infinite;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        span{
+            font-size: 2rem;
+            // line-height: 1.6rem;
+            letter-spacing: 0.8rem;
+            text-align: center;
+
+        }
+        h1{
+            font-size: 9rem;
+            line-height: 10.6rem;
+            letter-spacing: 0.3rem;
+            margin-bottom: 5rem;
+        }
+        h4{
+            font-size: 2rem;
+            // line-height: 10.6rem;
+            letter-spacing: 0.3rem;
+            margin-bottom: 5rem
+        }
+        em{
+            color:$color-logo-1;
+            font-weight: 500;
+        }
+
+    }
+    .animate img{
+        height: 60rem;
+        animation: move-top-bottom 3s infinite;
+        transition: 0.5s ease-out;
+    }
+}

@@ -1,0 +1,116 @@
+.section-about {
+
+    // background-color: $color-grey-light-2;
+    padding: 5rem ;
+    word-spacing: .2rem;
+    margin: 0 20rem 0 20rem;
+    border: solid 3px $color-primary;
+    display: flex;
+    flex-direction: row;
+    font-family: "Montserrat", sans-serif;
+    .image{
+        margin: 2rem 2rem 0 0;
+        height: 30vh;
+        width: auto;
+        border-radius: 50% 0px;
+        border-width: 3px;
+        border-style: solid;
+        border-color: $color-primary;
+
+      }
+      .social-links {
+        display: flex;
+        flex-direction: row;
+        a {
+          color: $color-primary;
+          font-size: 2rem;
+          width: 3rem;
+          height: 5rem;
+          transition: all 0.2s ease-in;
+      
+          &:hover {
+            transform: translateY(-4px);
+            color: $color-white;
+          }
+        }
+      }
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        margin: 0 1rem 0 1rem;
+        .image{
+            height: auto;
+            width: 30vh;
+            margin-bottom: 1.5rem;
+        }
+    }
+    .about_text{
+     z-index: 2;
+    }
+}
+
+
+.section-project {
+    // background-color: $color-grey-light-1;
+    padding: 5rem 0 5rem 0;
+
+    @include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
+    }
+}
+
+.section-contact {
+    padding: 15rem 0;
+    // background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-secondary-dark, 0.5),
+        rgba($color-black, 0.8));
+    // url(../../img/snow.jpg);
+    // background-size: cover;
+    // background-position: top;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+}
+
+.contact {
+    background-image: linear-gradient(105deg, 
+                                    rgba($color-white, .8) 0%,
+                                    rgba($color-white, .8) 50%,
+                                    transparent 50%) ,
+                            url(../../img/cover-6.jpg) ;
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
+    @include respond(tab-land) {
+        background-image: linear-gradient(105deg, 
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 65%,
+        transparent 65%) ,
+url(../../img/cover-6.jpg);
+        background-size: cover;
+    }
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(to right, 
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 100%),
+url(../../img/cover-6.jpg);
+    }
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+
+        @include respond(tab-land) {
+            width: 65%;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    }
+}

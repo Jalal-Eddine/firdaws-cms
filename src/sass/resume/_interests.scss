@@ -1,0 +1,45 @@
+.resume .func .interests {
+    background: $darker-color;
+    margin: 1.5rem 0 0;
+    padding: 1.5rem;
+  }
+  .resume .func .interests-items {
+    box-sizing: border-box;
+    padding: 0 0 1.5rem;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: 37.5em) {
+      flex-direction: column;
+      align-items: center;
+  }
+  }
+  .resume .func .interests-items div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+  }
+  .resume .func .interests-items div:hover i {
+    transform: scale(1.2);
+  }
+  .resume .func .interests-items div:hover span {
+    color: $text-hover;
+    transition-duration: 0.3s;
+  }
+  .resume .func .interests-items div i {
+    font-size: 4.5rem;
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+    color: $icons;
+    transition-duration: 0.3s;
+  }
+  .resume .func .interests-items div span {
+    display: block;
+  }
+  

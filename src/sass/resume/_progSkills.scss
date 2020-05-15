@@ -1,0 +1,48 @@
+.skills-prog {
+    clear: both;
+    background: $darker-color;
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+.skills-prog ul {
+    margin-left: 1.5rem;
+  }
+  
+.skills-prog ul li {
+    margin-bottom: .8rem;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.3s;
+  }
+  
+.skills-prog ul li:hover {
+    color: $text-hover;
+  }
+  
+.skills-prog ul li:hover .skills-bar .bar {
+    background: $text-hover;
+    box-shadow: 0 0 0 .1rem $text-hover;
+  }
+  
+.skills-prog ul li span {
+    display: block;
+    width: 12rem;
+  }
+  
+.skills-prog ul li .skills-bar {
+    background: $text-background;
+    height: .2rem;
+    width: calc(100% - 12rem);
+    position: relative;
+    border-radius: .2rem;
+  }
+  
+.skills-prog ul li .skills-bar .bar {
+    position: absolute;
+    top: -.1rem;
+    height: .4rem;
+    background: $icons;
+    box-shadow: 0 0 0 $icons;
+    border-radius: .5rem;
+  }

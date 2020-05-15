@@ -1,0 +1,122 @@
+.mini-projects{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 4rem 0 4rem;
+    font-size: 1.5rem;
+    @include respond(tab-port) { 
+        flex-direction: column; 
+        margin: 2rem;
+    }
+    &__icons{
+        font-size: 7rem;
+        color:rgba(2, 2, 2, 0.8);
+    }
+}
+
+.mini-projects .card{
+    position: relative;
+    // background-color: rgba($color-secondary-dark, .3);
+
+}
+
+.mini-projects .card .face{
+    width: 30rem;
+    height: 20rem;
+    transition: 0.5s;
+}
+
+.mini-projects .card .face.face1{
+    position: relative;
+/*   cart color */
+    background: rgba($color-primary,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    transform: translateY(10rem);
+}
+// !hover
+.mini-projects .card:hover .face.face1{
+/*   cart color after hover   */
+    &.javascript{
+        background: rgba($javascript,.95);
+        transform: translateY(0);
+    }
+}
+
+.mini-projects .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+// !hover
+.mini-projects .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.mini-projects .card .face.face1 .content h3{
+    margin: 1rem 0 0;
+    padding: 0;
+    color: rgba(41, 39, 39, 0.8);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.mini-projects .card .face.face2{
+    position: relative;
+    background: rgba($color-secondary-dark, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+    transform: translateY(-10rem);
+}
+// !hover
+.mini-projects .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.mini-projects .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.mini-projects .card .face.face2 .content button{
+    margin: 1.5rem 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: rgb(25, 102, 96);
+    padding: .5rem;
+    border: 1px solid rgba(#fff,.9);
+    cursor: pointer;
+}
+// !hover
+.mini-projects .card .face.face2 .content button:hover{
+    background: $javascript;
+    color: rgb(33, 37, 37);
+}
+
+@media only screen and (max-width: 56.25em),
+            only screen and (hover: none) {
+    .mini-projects .card{
+        margin-top: 3rem;
+    }
+    .mini-projects .card .face.face1{
+        /*   cart color after hover   */
+            background: rgba($javascript,.95);
+            transform: translateY(0);
+        }
+    .mini-projects .card .face.face1 .content{
+            opacity: 1;
+        }
+    .mini-projects .card .face.face2{
+        transform: translateY(0);
+    }
+    .mini-projects .card .face.face2 .content button{
+        color: rgb(25, 102, 96);
+    }           
+    }

@@ -1,0 +1,13 @@
+.frProjects{
+    animation: move-top-bottom 4s infinite;
+    overflow: hidden;
+    padding: 70px 0;
+    position: relative;
+    img{
+        position: absolute;
+        opacity: 0.05;
+        max-width: 100%;
+        border-radius: .2857rem;
+        animation: move-top-bottom 4s infinite;
+    }
+}

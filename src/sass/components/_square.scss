@@ -1,0 +1,145 @@
+ .squares {
+    animation: move-left-right 1s infinite;
+    position: fixed;
+    transition: 0.5s ease-out;
+    overflow: hidden;
+    border-radius: 40%;
+    z-index: -1;
+}
+.color-primary{
+    background: $color-white;
+    background: linear-gradient(0deg, $color-white 0%, $color-grey-light-2 100%);
+}
+.firdaws-color{
+    overflow: hidden;
+    background: $color-blue-2;
+    // background: linear-gradient(0deg, $color-blue-2 0%, $color-blue-5 100%);
+    background-image: linear-gradient(to right bottom, $color-blue-2, $color-blue-2);
+}
+.violet{
+    background: #ba54f5;
+    background: linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
+}
+ .green{
+    background: $color-green-1;
+    background: linear-gradient(0deg, $color-green-1 0%,$color-green-1 100%);
+}
+.logo-color{
+    background: $color-logo-1;
+    background: linear-gradient(0deg, $color-logo-1 0%, $color-blue-2 100%);
+}
+//Square1
+ .squares.square1 {
+    animation: move-left-right 4s infinite;
+    height: 30rem;
+    width: 30rem;
+    opacity: 0.5;
+    left: 3%;
+    top: -21%;
+    @include respond(phone) { 
+        height: 20rem;
+        width: 20rem;
+        top: 0;
+    }
+
+}
+//Square2
+ .squares.square2 {
+    animation: move-left-right 6s infinite;
+    height: 40rem;
+    width: 40rem;
+    opacity: 0.5;
+    right: -5%;
+    top: -12%;
+    @include respond(phone) { 
+        height: 20rem;
+        width: 20rem;
+        top:0;
+    }
+}
+//Square3
+.squares.square3 {
+    animation: move-left-right 5s infinite;
+    height: 20rem;
+    width: 20rem;
+    opacity: 0.5;
+    left: -5%;
+    bottom: 0%;
+}
+//Square4
+ .squares.square4 {
+    animation: move-left-right 10s infinite;
+    height: 10rem;
+    width: 10rem;
+    opacity: 0.4;
+    right: 27%;
+    top: 70%;
+}
+//Square5
+.squares.square5 {
+    animation: move-left-right 6s infinite;
+    height: 25rem;
+    width: 25rem;
+    opacity: 0.1;
+    left: 32%;
+    bottom: 29%;
+}
+//Square6
+.squares.square6 {
+    animation: move-left-right 9s infinite;
+    left: 10%;
+    top: 35%;
+    height: 8rem;
+    width: 8rem;
+    opacity: 0.4;
+}
+//Square6
+.squares.square7 {
+    animation: move-left-right 3s infinite;
+    width: 30rem;
+    height: 30rem;
+    right: -5%;
+    bottom: 0%;
+    opacity: 0.5;
+}
+
+//section2
+//  .square-1 {
+//     height: 30rem;
+//     width: 30rem;
+//     background-image: url(./../../img/firdaws/square-purple-1.png);
+//     top: 8rem;
+//     left: 10rem;
+//     opacity: 0.3;
+//     animation-duration: 5s;
+// }
+// .square-2 {
+//     height: 20rem;
+//     width: 20rem;
+//     background: url(./../../img/firdaws/square-purple-1.png);
+//     background-size: cover;
+//     bottom: 4rem;
+//     left: 60rem;
+//     opacity: 0.1;
+//     animation-duration: 8s;
+// }
+//  .square-3 {
+//     height: 10rem;
+//     width: 10rem;
+//     background: url(./../../img/firdaws/square-purple-1.png);
+//     background-size: cover;
+//     top: 30rem;
+//     left: 70rem;
+//     opacity: 0.5;
+//     animation-duration: 5s;
+// }
+// .square-4 {
+//     height: 25rem;
+//     width: 25rem;
+//     background: url(./../../img/firdaws/square-purple-1.png);
+//     background-size: cover;
+//     top: 0;
+//     right: 10rem;
+//     opacity: 0.4;
+//     animation-duration: 9s;
+// }

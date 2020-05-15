@@ -1,0 +1,11 @@
+.searchBox{
+    padding: 0.5rem;
+    text-align: center;
+    &__input{
+    padding:1rem ;
+    background-color: rgba($color-blue-1,0.8);
+    border:2px solid rgba($color-logo-1,0.8);
+    color: #fff;
+    width: 30rem;
+    }
+}
