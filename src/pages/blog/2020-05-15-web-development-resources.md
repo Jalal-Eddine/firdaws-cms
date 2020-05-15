@@ -6,6 +6,6 @@ description: testing
 featuredpost: true
 featuredimage: /img/chemex.jpg
 tags:
-  - web dev
+  - web
 ---
 testing is testing
